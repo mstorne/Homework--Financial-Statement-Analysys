@@ -67,16 +67,16 @@ worstMonth
 
 
 #Convert all calculations to units of one thousand Dollars
-revenue_1000 = [round(i,0) for i in revenue]
-expenses_1000 = [round(i,0) for i in expenses]
-profit_1000 = [round(i,0) for i in profit]
-profitAfterTax_1000 = [round(i,0) for i in profitAfterTax]
+revenue_1000 = [round(i/1000,2) for i in revenue]
+expenses_1000 = [round(i/1000,2) for i in expenses]
+profit_1000 = [round(i/1000,2) for i in profit]
+profitAfterTax_1000 = [round(i/1000,2) for i in profitAfterTax]
 
 
-revenue_1000 = [int(i) for i in revenue]
-expenses_1000 = [int(i) for i in expenses]
-profit_1000 = [int(i) for i in profit]
-profitAfterTax_1000 = [int(i) for i in profitAfterTax]
+revenue_1000 = [int(i) for i in revenue_1000]
+expenses_1000 = [int(i) for i in expenses_1000]
+profit_1000 = [int(i) for i in profit_1000]
+profitAfterTax_1000 = [int(i) for i in profitAfterTax_1000]
 
 
 #Print results
